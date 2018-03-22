@@ -12,9 +12,9 @@ tags:
 - Microsoft
 - Links
 - Deployment
-created: "2018-02-25"
-modified: "2018-02-25"
-url: https://raw.githubusercontent.com/streamdata-gallery/resources/master/_listings/azure-resource-manager/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/azure-resource-manager/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Azure Resource Manager API
@@ -26,7 +26,7 @@ apis:
   tags: Resources
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/resources/master/_listings/azure-resource-manager/tenants-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/azure-resource-manager/subscriptions-subscriptionid-resourcegroups-sourceresourcegroupname-moveresources-post.md
 x-common:
 - type: x-website
   url: https://docs.microsoft.com/en-us/rest/api/resources/
