@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Azure Resource Manager
 x-complete: 1
@@ -273,4 +272,135 @@ paths:
           description: OK
       tags:
       - Resources
----
+  /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}:
+    head:
+      summary: Resource Groups Check Existence
+      description: Checks whether a resource group exists.
+      operationId: ResourceGroups_CheckExistence
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupname-head
+      parameters:
+      - in: query
+        name: No Name
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group to check
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Groups Existence
+  /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/exportTemplate:
+    post:
+      summary: Resource Groups Export Template
+      description: Captures the specified resource group as a template.
+      operationId: ResourceGroups_ExportTemplate
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameexporttemplate-post
+      parameters:
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: Parameters for exporting the template
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: resourceGroupName
+        description: The name of the resource group to export as a template
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Groups Export Template
+  /{linkId}:
+    delete:
+      summary: Resource Links Delete
+      description: Deletes a resource link with the specified ID.
+      operationId: ResourceLinks_Delete
+      x-api-path-slug: linkid-delete
+      parameters:
+      - in: path
+        name: linkId
+        description: The fully qualified ID of the resource link
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Links
+    put:
+      summary: Resource Links Create Or Update
+      description: Creates or updates a resource link between the specified resources.
+      operationId: ResourceLinks_CreateOrUpdate
+      x-api-path-slug: linkid-put
+      parameters:
+      - in: path
+        name: linkId
+        description: The fully qualified ID of the resource link
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: Parameters for creating or updating a resource link
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Links
+    get:
+      summary: Resource Links Get
+      description: Gets a resource link with the specified ID.
+      operationId: ResourceLinks_Get
+      x-api-path-slug: linkid-get
+      parameters:
+      - in: path
+        name: linkId
+        description: The fully qualified Id of the resource link
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Links
+  /{scope}/providers/Microsoft.Resources/links:
+    get:
+      summary: Resource Links List At Source Scope
+      description: Gets a list of resource links at and below the specified source
+        scope.
+      operationId: ResourceLinks_ListAtSourceScope
+      x-api-path-slug: scopeprovidersmicrosoft-resourceslinks-get
+      parameters:
+      - in: query
+        name: $filter
+        description: The filter to apply when getting resource links
+      - in: query
+        name: No Name
+      - in: path
+        name: scope
+        description: The fully qualified ID of the scope for getting the resource
+          links
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Links
+  /subscriptions/{subscriptionId}/providers/Microsoft.Resources/links:
+    get:
+      summary: Resource Links List At Subscription
+      description: Gets all the linked resources for the subscription.
+      operationId: ResourceLinks_ListAtSubscription
+      x-api-path-slug: subscriptionssubscriptionidprovidersmicrosoft-resourceslinks-get
+      parameters:
+      - in: query
+        name: $filter
+        description: The filter to apply on the list resource links operation
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Links At Subscription

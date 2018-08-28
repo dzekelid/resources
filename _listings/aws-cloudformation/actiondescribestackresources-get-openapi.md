@@ -13,28 +13,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeStackResource:
-    get:
-      summary: Describe Stack Resource
-      description: Returns a description of the specified resource in the specified
-        stack.
-      operationId: describeStackResource
-      x-api-path-slug: actiondescribestackresource-get
-      parameters:
-      - in: query
-        name: LogicalResourceId
-        description: The logical name of the resource as specified in the template
-        type: string
-      - in: query
-        name: StackName
-        description: 'The name or the unique stack ID that is associated with the
-          stack, which are not always interchangeable:'
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Stack Resources
   /?Action=DescribeStackResources:
     get:
       summary: Describe Stack Resources
@@ -50,6 +28,50 @@ paths:
         name: PhysicalResourceId
         description: The name or unique identifier that corresponds to a physical
           instance ID of a resource supported by AWS CloudFormation
+        type: string
+      - in: query
+        name: StackName
+        description: 'The name or the unique stack ID that is associated with the
+          stack, which are not always interchangeable:'
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Stack Resources
+  /?Action=ListStackResources:
+    get:
+      summary: List Stack Resources
+      description: Returns descriptions of all resources of the specified stack.
+      operationId: listStackResources
+      x-api-path-slug: actionliststackresources-get
+      parameters:
+      - in: query
+        name: NextToken
+        description: A string that identifies the next page of stack resources that
+          you want to retrieve
+        type: string
+      - in: query
+        name: StackName
+        description: 'The name or the unique stack ID that is associated with the
+          stack, which are not always interchangeable:'
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Stack Resources
+  /?Action=DescribeStackResource:
+    get:
+      summary: Describe Stack Resource
+      description: Returns a description of the specified resource in the specified
+        stack.
+      operationId: describeStackResource
+      x-api-path-slug: actiondescribestackresource-get
+      parameters:
+      - in: query
+        name: LogicalResourceId
+        description: The logical name of the resource as specified in the template
         type: string
       - in: query
         name: StackName

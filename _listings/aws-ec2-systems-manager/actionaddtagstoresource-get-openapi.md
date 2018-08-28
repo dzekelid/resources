@@ -37,6 +37,33 @@ paths:
           description: OK
       tags:
       - Resources
+  /?Action=RemoveTagsFromResource:
+    get:
+      summary: Remove Tags From Resource
+      description: Removes all tags from the specified resource.
+      operationId: removeTagsFromResource
+      x-api-path-slug: actionremovetagsfromresource-get
+      parameters:
+      - in: query
+        name: ResourceId
+        description: The resource ID for which you want to remove tags
+        type: string
+      - in: query
+        name: ResourceType
+        description: The type of resource of which you want to remove a tag
+        type: string
+      - in: query
+        name: TagKeys
+        description: Tag keys that you want to remove from the specified resource
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Remove
+      - Tags
+      - From
+      - Resource
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

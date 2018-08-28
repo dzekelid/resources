@@ -7,13 +7,13 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-call
 x-kinRank: "9"
 x-alexaRank: "129466"
 tags: Resources
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Callfire Find webhook resources
-  x-api-slug: callfire
+- name: CallFire - Find webhook resources
+  x-api-slug: webhooksresources-get
   description: 'Searches for webhook resources. Available resources include ''CccCampaign'':
     [''started'', ''stopped'', ''finished''], ''CallBroadcast'': [''started'', ''stopped'',
     ''finished''], ''TextBroadcast'': [''started'', ''stopped'', ''finished''], ''OutboundCall'':
@@ -21,32 +21,61 @@ apis:
     ''InboundText'': [''finished''], ''ContactList'': [''validationFinished'', ''validationFailed'']'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//webhooks/resources
-  tags: Webhooks,Resources
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/webhooksresources-get-openapi.md
-- name: Callfire Find specific webhook resource
-  x-api-slug: callfire
+- name: CallFire - Find specific webhook resource
+  x-api-slug: webhooksresourcesresource-get
   description: Returns information about supported events for a given webhook resource
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
-  baseURL: https://www.callfire.com//v2//webhooks/resources/{resource}
-  tags: Webhooks,Resources,Resource
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/webhooksresourcesresource-get-openapi.md
-- name: Callfire
-  x-api-slug: callfire
-  description: Grow your business with virtual phone numbers, IVR, voice broadcasting,
-    mass text messaging services and power dialing. Try CallFire for FREE!
+- name: CallFire - Find specific webhook resource
+  x-api-slug: webhooksresourcesresource-get
+  description: Returns information about supported events for a given webhook resource
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
   humanURL: http://www.callfire.com
   baseURL: https://www.callfire.com//v2
-  tags: Resources
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/webhooksresourcesresource-get-openapi.md
+- name: CallFire - Find specific webhook resource
+  x-api-slug: webhooksresourcesresource-get
+  description: Returns information about supported events for a given webhook resource
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/webhooksresourcesresource-get-openapi.md
+- name: CallFire - Find specific webhook resource
+  x-api-slug: webhooksresourcesresource-get
+  description: Returns information about supported events for a given webhook resource
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/callfire/webhooksresourcesresource-get-openapi.md
 x-common:
 - type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK
@@ -54,6 +83,10 @@ x-common:
   url: https://answers.callfire.com/hc/en-us/sections/200166268-Billing
 - type: x-account-settings
   url: https://answers.callfire.com/hc/en-us/sections/200187056-Account-Settings
+- type: x-api-gallery
+  url: http://bureau.of.justice.statistics.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://callfire.stack.network
 - type: x-authentication
   url: https://www.callfire.com/api-documentation/how-do-i-enable-api-on-my-account
 - type: x-blog

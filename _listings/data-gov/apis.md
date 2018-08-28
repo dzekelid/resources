@@ -12,162 +12,162 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Resources
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Data.gov API Get Datasets Community Resources
-  x-api-slug: data-gov-api
+- name: Data.gov API - Get Datasets Community Resources
+  x-api-slug: datasetscommunity-resources-get
   description: List all community resources
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/
-  tags: Datasets, Community, Resources
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resources-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resources-get-openapi.md
-- name: Data.gov API Add Datasets Community Resources
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Datasets Community Resources
+  x-api-slug: datasetscommunity-resources-post
   description: Create a new community resource
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/
-  tags: Datasets, Community, Resources
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resources-post-openapi.md
-- name: Data.gov API Delete Datasets Community Resources Community
-  x-api-slug: data-gov-api
+- name: Data.gov API - Delete Datasets Community Resources Community
+  x-api-slug: datasetscommunity-resourcescommunity-delete
   description: Delete a given community resource
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/{community}/
-  tags: Datasets, Community, Resources, Community
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunity-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunity-delete-openapi.md
-- name: Data.gov API Get Datasets Community Resources Community
-  x-api-slug: data-gov-api
+- name: Data.gov API - Get Datasets Community Resources Community
+  x-api-slug: datasetscommunity-resourcescommunity-get
   description: Retrieve a community resource given its identifier
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/{community}/
-  tags: Datasets, Community, Resources, Community
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunity-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunity-get-openapi.md
-- name: Data.gov API Put Datasets Community Resources Community
-  x-api-slug: data-gov-api
+- name: Data.gov API - Put Datasets Community Resources Community
+  x-api-slug: datasetscommunity-resourcescommunity-put
   description: Update a given community resource
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/{community}/
-  tags: Datasets, Community, Resources, Community
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunity-put-openapi.md
-- name: Data.gov API Add Datasets Community Resources Community Upload
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Datasets Community Resources Community Upload
+  x-api-slug: datasetscommunity-resourcescommunityupload-post
   description: Update the file related to a given community resource
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/community_resources/{community}/upload/
-  tags: Datasets, Community, Resources, Community, Upload
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunityupload-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetscommunity-resourcescommunityupload-post-openapi.md
-- name: Data.gov API Add Datasets Dataset Resources
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Datasets Dataset Resources
+  x-api-slug: datasetsdatasetresources-post
   description: Create a new resource for a given dataset
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/{dataset}/resources/
-  tags: Datasets, Dataset, Resources
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresources-post-openapi.md
-- name: Data.gov API Put Datasets Dataset Resources
-  x-api-slug: data-gov-api
+- name: Data.gov API - Put Datasets Dataset Resources
+  x-api-slug: datasetsdatasetresources-put
   description: Reorder resources
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/{dataset}/resources/
-  tags: Datasets, Dataset, Resources
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresources-put-openapi.md
-- name: Data.gov API Delete Datasets Dataset Resources R
-  x-api-slug: data-gov-api
+- name: Data.gov API - Delete Datasets Dataset Resources R
+  x-api-slug: datasetsdatasetresourcesrid-delete
   description: Delete a given resource on a given dataset
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/{dataset}/resources/{rid}/
-  tags: Datasets, Dataset, Resources, R
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresourcesrid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresourcesrid-delete-openapi.md
-- name: Data.gov API Put Datasets Dataset Resources R
-  x-api-slug: data-gov-api
+- name: Data.gov API - Put Datasets Dataset Resources R
+  x-api-slug: datasetsdatasetresourcesrid-put
   description: Update a given resource on a given dataset
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/{dataset}/resources/{rid}/
-  tags: Datasets, Dataset, Resources, R
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresourcesrid-put-openapi.md
-- name: Data.gov API Add Datasets Dataset Resources R Upload
-  x-api-slug: data-gov-api
+- name: Data.gov API - Add Datasets Dataset Resources R Upload
+  x-api-slug: datasetsdatasetresourcesridupload-post
   description: Upload a file related to a given resource on a given dataset
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///datasets/{dataset}/resources/{rid}/upload/
-  tags: Datasets, Dataset, Resources, R, Upload
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresourcesridupload-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/datasetsdatasetresourcesridupload-post-openapi.md
-- name: Data.gov API Get Me Org Community Resources
-  x-api-slug: data-gov-api
+- name: Data.gov API - Get Me Org Community Resources
+  x-api-slug: meorg-community-resources-get
   description: List all community resources related to me and my organizations
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3///me/org_community_resources/
-  tags: Me, Org, Community, Resources
+  baseURL: https://catalog.data.gov//api/3/
+  tags: Federal Government, Federal Government, Federal Government   GSA, Stack Network,
+    Data Provider, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/meorg-community-resources-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/meorg-community-resources-get-openapi.md
-- name: Data.gov API
-  x-api-slug: data-gov-api
-  description: data.gov is a U.S. government website launched in late May 2009 by
-    the then Federal Chief Information Officer (CIO) of the United States, Vivek Kundra.
-    According to its website, The purpose of data.gov is to increase public access
-    to high value, machine readable datasets generated by the Executive Branch of
-    the Federal Government. The site seeks to become a repository for all the information
-    the government collects. The site would publish to the public any data that is
-    not private or restricted for national security reasons.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
-  humanURL: http://data.gov/
-  baseURL: https://catalog.data.gov//api/3/
-  tags: Resources
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/data-gov/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://danske.bank.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://data.gov.stack.network
 - type: x-blog
   url: https://www.data.gov/meta/
 - type: x-blog-rss

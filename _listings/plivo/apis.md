@@ -7,49 +7,72 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1113-plivo
 x-kinRank: "8"
 x-alexaRank: "130970"
 tags: Resources
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Codenvy Account API Get Account Resources
-  x-api-slug: codenvy-account-api
+- name: Codenvy Account API - Get Account Resources
+  x-api-slug: accountidresources-get
   description: 'Returns used resources, provided by subscriptions. Roles: account/owner,
     account/member, system/manager, system/admin.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1113-plivo.jpg
   humanURL: http:///account
-  baseURL: :///account/https://codenvy.com/api//account/{id}/resources
-  tags: Account,Id,Resources
+  baseURL: :///account/https://codenvy.com/api
+  tags: Voice, Target, Imports, Stack Network, Technology, Telecommunications, SMS,
+    Telecommunications, Messages, Relative Data, Service API, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/accountidresources-get-openapi.md
-- name: Codenvy Account API Post Account Resources
-  x-api-slug: codenvy-account-api
+- name: Codenvy Account API - Post Account Resources
+  x-api-slug: accountidresources-post
   description: 'Redistributes resources between workspaces. Roles: account/owner,
     system/manager, system/admin.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1113-plivo.jpg
   humanURL: http:///account
-  baseURL: :///account/https://codenvy.com/api//account/{id}/resources
-  tags: Account,Id,Resources
+  baseURL: :///account/https://codenvy.com/api
+  tags: Voice, Target, Imports, Stack Network, Technology, Telecommunications, SMS,
+    Telecommunications, Messages, Relative Data, Service API, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/accountidresources-post-openapi.md
-- name: Codenvy Account API
-  x-api-slug: codenvy-account-api
-  description: 'Voice & SMS API Platform: Plivo enables businesses and developers
-    to tap into powerful Voice and SMS capabilities without carrier lock-in.'
+- name: Codenvy Account API - Get Account Resources
+  x-api-slug: accountidresources-get
+  description: 'Returns used resources, provided by subscriptions. Roles: account/owner,
+    account/member, system/manager, system/admin.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1113-plivo.jpg
   humanURL: http:///account
   baseURL: :///account/https://codenvy.com/api
-  tags: Resources
+  tags: Voice, Target, Imports, Stack Network, Technology, Telecommunications, SMS,
+    Telecommunications, Messages, Relative Data, Service API, Relative StreamRank,
+    Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/accountidresources-get-openapi.md
+- name: Codenvy Account API - Post Account Resources
+  x-api-slug: accountidresources-post
+  description: 'Redistributes resources between workspaces. Roles: account/owner,
+    system/manager, system/admin.'
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1113-plivo.jpg
+  humanURL: http:///account
+  baseURL: :///account/https://codenvy.com/api
+  tags: Voice, Target, Imports, Stack Network, Technology, Telecommunications, SMS,
+    Telecommunications, Messages, Relative Data, Service API, Relative StreamRank,
+    Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resources/master/_listings/plivo/accountidresources-post-openapi.md
 x-common:
 - type: x--net-library
   url: https://www.plivo.com/docs/helpers/dotnet/
 - type: x-android-sdk
   url: https://www.plivo.com/docs/sdk/android/
+- type: x-api-gallery
+  url: http://plentymarkets.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://plivo.stack.network
 - type: x-base
   url: https://api.plivo.com
 - type: x-blog

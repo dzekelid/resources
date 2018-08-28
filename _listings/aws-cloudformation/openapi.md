@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS CloudFormation
 x-complete: 1
@@ -12,28 +11,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeStackResource:
-    get:
-      summary: Describe Stack Resource
-      description: Returns a description of the specified resource in the specified
-        stack.
-      operationId: describeStackResource
-      x-api-path-slug: actiondescribestackresource-get
-      parameters:
-      - in: query
-        name: LogicalResourceId
-        description: The logical name of the resource as specified in the template
-        type: string
-      - in: query
-        name: StackName
-        description: 'The name or the unique stack ID that is associated with the
-          stack, which are not always interchangeable:'
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Stack Resources
   /?Action=DescribeStackResources:
     get:
       summary: Describe Stack Resources
@@ -82,6 +59,28 @@ paths:
           description: OK
       tags:
       - Stack Resources
+  /?Action=DescribeStackResource:
+    get:
+      summary: Describe Stack Resource
+      description: Returns a description of the specified resource in the specified
+        stack.
+      operationId: describeStackResource
+      x-api-path-slug: actiondescribestackresource-get
+      parameters:
+      - in: query
+        name: LogicalResourceId
+        description: The logical name of the resource as specified in the template
+        type: string
+      - in: query
+        name: StackName
+        description: 'The name or the unique stack ID that is associated with the
+          stack, which are not always interchangeable:'
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Stack Resources
   /?Action=SignalResource:
     get:
       summary: Signal Resource
@@ -112,4 +111,3 @@ paths:
           description: OK
       tags:
       - Signal Resources
----

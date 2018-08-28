@@ -36,6 +36,28 @@ paths:
       - Account
       - Id
       - Resources
+    post:
+      summary: Post Account Resources
+      description: 'Redistributes resources between workspaces. Roles: account/owner,
+        system/manager, system/admin.'
+      operationId: redistributeResources
+      x-api-path-slug: accountidresources-post
+      parameters:
+      - in: body
+        name: body
+        description: Resources description
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: id
+        description: Account ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Account
+      - Id
+      - Resources
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

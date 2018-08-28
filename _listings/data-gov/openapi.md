@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Data.Gov
 x-complete: 1
@@ -277,4 +276,3 @@ paths:
       - Org
       - Community
       - Resources
----

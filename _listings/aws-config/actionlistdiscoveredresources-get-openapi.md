@@ -14,6 +14,47 @@ produces:
 consumes:
 - application/json
 paths:
+  /?Action=GetResourceConfigHistory:
+    get:
+      summary: Get Resource Config History
+      description: Returns a list of configuration items for the specified resource.
+      operationId: getResourceConfigHistory
+      x-api-path-slug: actiongetresourceconfighistory-get
+      parameters:
+      - in: query
+        name: chronologicalOrder
+        description: The chronological order for configuration items listed
+        type: string
+      - in: query
+        name: earlierTime
+        description: The time stamp that indicates an earlier time
+        type: string
+      - in: query
+        name: laterTime
+        description: The time stamp that indicates a later time
+        type: string
+      - in: query
+        name: limit
+        description: The maximum number of configuration items returned on each page
+        type: string
+      - in: query
+        name: nextToken
+        description: The nextToken string returned on a previous page thatyou use
+          to get the next page of results in a paginated response
+        type: string
+      - in: query
+        name: resourceId
+        description: The ID of the resource (for example
+        type: string
+      - in: query
+        name: resourceType
+        description: The resource type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Resource Configurations
   /?Action=ListDiscoveredResources:
     get:
       summary: List Discovered Resources
@@ -56,6 +97,88 @@ paths:
           description: OK
       tags:
       - Discovered Resources
+  /?Action=DescribeComplianceByResource:
+    get:
+      summary: Describe Compliance By Resource
+      description: Indicates whether the specified AWS resources are compliant.
+      operationId: describeComplianceByResource
+      x-api-path-slug: actiondescribecompliancebyresource-get
+      parameters:
+      - in: query
+        name: ComplianceTypes
+        description: Filters the results by compliance
+        type: string
+      - in: query
+        name: Limit
+        description: The maximum number of evaluation results returned on each page
+        type: string
+      - in: query
+        name: NextToken
+        description: The nextToken string returned on a previous page thatyou use
+          to get the next page of results in a paginated response
+        type: string
+      - in: query
+        name: ResourceId
+        description: The ID of the AWS resource for which you want compliance information
+        type: string
+      - in: query
+        name: ResourceType
+        description: The types of AWS resources for which you want compliance information;for
+          example, AWS::EC2::Instance
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Compliance
+  /?Action=GetComplianceDetailsByResource:
+    get:
+      summary: Get Compliance Details By Resource
+      description: Returns the evaluation results for the specified AWS resource.
+      operationId: getComplianceDetailsByResource
+      x-api-path-slug: actiongetcompliancedetailsbyresource-get
+      parameters:
+      - in: query
+        name: ComplianceTypes
+        description: Filters the results by compliance
+        type: string
+      - in: query
+        name: NextToken
+        description: The nextToken string returned on a previous page thatyou use
+          to get the next page of results in a paginated response
+        type: string
+      - in: query
+        name: ResourceId
+        description: The ID of the AWS resource for which you want compliance information
+        type: string
+      - in: query
+        name: ResourceType
+        description: The type of the AWS resource for which you want compliance information
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Compliance
+  /?Action=GetComplianceSummaryByResourceType:
+    get:
+      summary: Get Compliance Summary By Resource Type
+      description: Returns the number of resources that are compliant and the number
+        that are noncompliant.
+      operationId: getComplianceSummaryByResourceType
+      x-api-path-slug: actiongetcompliancesummarybyresourcetype-get
+      parameters:
+      - in: query
+        name: ResourceTypes
+        description: Specify one or more resource types to get the number of resources
+          that are compliant and the number that are noncompliant for each resource
+          type
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Compliance
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
